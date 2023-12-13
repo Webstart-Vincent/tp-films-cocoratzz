@@ -113,8 +113,7 @@ p {
     align-items: center;
     gap: 60px;
 }
-
-/* FORMAT TABLETTE PAYSAGE */
+/*--------------------------- FORMAT TABLETTE PAYSAGE ---------------------------*/
 @media (max-width: 1024px) {
     img {
         border-radius: 20px;
@@ -163,7 +162,7 @@ p {
     }
 }
 
-/* FORMAT TABLETTE PORTRAIT */
+/*--------------------------- FORMAT TABLETTE PORTRAIT ---------------------------*/
 @media (max-width: 768px) {
     h1 {
         display: none;
