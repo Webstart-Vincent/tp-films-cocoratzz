@@ -113,6 +113,11 @@ p {
     align-items: center;
     gap: 60px;
 }
+
+.blockHorizontal {
+    display: flex;
+    flex-direction: row;
+}
 /*--------------------------- FORMAT TABLETTE PAYSAGE ---------------------------*/
 @media (max-width: 1024px) {
     img {
