@@ -83,6 +83,29 @@ section:nth-child(6) {
     --bg-color: #17191e;
 }
 
+/* pour faire le scroll horizontal */
+/* .blocHorizontal {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden; */
+
+/* pour ie et mozilla */
+/* -ms-overlow-style: none;
+    scrollbar-width: none;
+}*/
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* format tablette paysage */
 
 @media (max-width: 1024px) {
@@ -113,7 +136,6 @@ section:nth-child(6) {
         overflow: hidden;
     }
 }
-
 /* format tablette portrait */
 
 @media (max-width: 1024px) and (orientation: portrait) {
