@@ -23,26 +23,20 @@ main {
     padding: 40px;
     display: grid;
     gap: 40px;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
 }
 
-.col {
-    width: 100%;
-    flex: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5rem;
-    scroll-snap-align: center;
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    transform: translateX(100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    -ms-overlow-style: none;
+    scrollbar-width: none;
 }
-
-.col:nth-child(3n) {
-    background-color: pink;
-}
-
-.col:nth-child(3n + 1) {
-    background-color: lightblue;
+::-webkit-scrollbar {
+    display: none;
 }
 
 section {
@@ -50,11 +44,12 @@ section {
     color: var(--txt-light-color);
     padding: 120px;
     border-radius: 80px;
-    display: grid;
+    display: flex;
     grid-template-columns: 2fr 3fr;
     gap: 60px;
     align-items: center;
     justify-items: center;
+    scroll-snap-align: center;
 }
 .poster {
     border-radius: 40px;
