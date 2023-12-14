@@ -39,6 +39,10 @@ main {
     scroll-snap-type: y mandatory;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 section {
     background-color: var(--bg-color);
     color: var(--txt-light-color);
