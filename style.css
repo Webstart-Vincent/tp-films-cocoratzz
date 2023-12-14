@@ -25,7 +25,7 @@ main {
     gap: 40px;
 }
 
-.container {
+/* .container {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
@@ -33,7 +33,7 @@ main {
 
 ::-webkit-scrollbar {
     display: none;
-}
+}*/
 
 section {
     background-color: var(--bg-color);
@@ -45,8 +45,34 @@ section {
     gap: 60px;
     align-items: center;
     justify-items: center;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
 }
+
+.blocHorizontal {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    -ms-overlow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 .poster {
     border-radius: 40px;
     max-width: 100%;
