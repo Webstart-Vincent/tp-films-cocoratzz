@@ -56,17 +56,17 @@ section {
     align-items: center;
     justify-items: center;
 }
-.movie__poster {
+.poster {
     border-radius: 40px;
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
 }
-.movie__text {
+.texte {
     display: grid;
 }
-.movie__text > p {
+.texte > p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 10;
@@ -112,10 +112,10 @@ section:nth-child(6) {
         border-radius: 40px;
         scroll-margin-block-start: 16px;
     }
-    .movie__poster {
+    .poster {
         border-radius: 20px;
     }
-    .movie__text > p {
+    .texte > p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 5;
@@ -129,7 +129,7 @@ section:nth-child(6) {
     section {
         grid-template-columns: 1fr;
     }
-    .movie__text {
+    .texte {
         display: none;
     }
 }
