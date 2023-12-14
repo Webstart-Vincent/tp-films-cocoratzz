@@ -25,14 +25,6 @@ main {
     gap: 40px;
 }
 
-.blocHorizontal {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-}
-
 .container {
     height: 100vh;
     overflow-y: scroll;
